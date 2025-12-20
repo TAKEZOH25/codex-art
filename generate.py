@@ -8,14 +8,14 @@ from jinja2 import Environment, FileSystemLoader
 
 # --- CONFIG ---
 SITE_NAME = "Art Virtuoso"
-SITE_URL = "https://art-virtuoso.com"
+SITE_URL = "https://dimgrey-mosquito-826040.hostingersite.com" # Corrected Hostinger URL
 DEFAULT_LANG = "fr"
 OTHER_LANGS = ["en"]
 LANGS = [DEFAULT_LANG] + OTHER_LANGS
 
 BASE_DIR = Path(__file__).parent
 DATA_FILE = BASE_DIR / "data" / "entities.json"
-OUTPUT_DIR = BASE_DIR / "output_build"
+OUTPUT_DIR = BASE_DIR / "dist"
 TEMPLATE_DIR_REL = "templates"
 ASSETS_DIR = BASE_DIR / "assets"
 
@@ -89,7 +89,10 @@ def main():
     # 1. Setup
     if OUTPUT_DIR.exists():
          print(f"Warning: Output dir {OUTPUT_DIR} exists, overwriting files...")
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    except FileExistsError:
+        pass
     
     entities = load_data()
     i18n = get_i18n_strings()
@@ -107,8 +110,10 @@ def main():
         e['image_url'] = f"/assets/illustrations/{e['slug']}.webp" if e.get('media', {}).get('has_image', True) else "/assets/illustrations/default.webp"
 
     # 3. Jinja Environment
-    # Using relative path string for loader
-    env = Environment(loader=FileSystemLoader(TEMPLATE_DIR_REL))
+    # Use pathlib for robust path handling
+    template_path = (BASE_DIR / "templates").resolve()
+    print(f"DEBUG: Loader using {template_path}")
+    env = Environment(loader=FileSystemLoader(str(template_path)))
     env.globals['site_name'] = SITE_NAME
     env.globals['current_year'] = datetime.now().year
     
@@ -135,7 +140,8 @@ def main():
 
         def render(template_name, path_suffix, context):
             out_path = prefix / path_suffix
-            if path_suffix.endswith("/"):
+            # Handle empty string or paths ending with /
+            if path_suffix == "" or path_suffix.endswith("/"):
                 out_path = out_path / "index.html"
             
             out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -169,6 +175,8 @@ def main():
             coll_slug = get_url(lang, type_key).strip("/")
             rel_coll_path = coll_slug.replace(f"{lang}/", "", 1) if lang != DEFAULT_LANG else coll_slug
             if rel_coll_path.startswith("/"): rel_coll_path = rel_coll_path[1:]
+            # Must end with / to trigger index.html creation
+            if not rel_coll_path.endswith("/"): rel_coll_path += "/"
 
             render("pages/index.html", rel_coll_path, {
                 'title': type_key.capitalize(),

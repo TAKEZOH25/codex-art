@@ -12,7 +12,8 @@
 
     <div class="entity-body">
         <figure class="main-image">
-            <img src="{{ entity.image_url }}" alt="{{ entity.media.alt[lang]|default(entity.text[lang].name) }}">
+            <img src="{{ entity.image_url }}"
+                alt="{{ entity.media.alt[lang] if entity.media and entity.media.alt else entity.text[lang].name }}">
         </figure>
 
         <div class="content">

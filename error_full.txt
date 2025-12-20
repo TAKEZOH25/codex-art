@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1016, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] Le chemin d’accès spécifié est introuvable: 'C:\\Users\\Emmanuel\\antigravity 2\\generateur\\dist\\artistes\\vincent-van-gogh'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Emmanuel\antigravity 2\generateur\run_debug.py", line 8, in <module>
+    generate.main()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\Emmanuel\antigravity 2\generateur\generate.py", line 189, in main
+    render("pages/entity.html", rel_ent_path, {
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'title': entity['text'][lang]['name'],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        'related_entities': []
+        ^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File "C:\Users\Emmanuel\antigravity 2\generateur\generate.py", line 147, in render
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1020, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\pathlib\__init__.py", line 1016, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [WinError 183] Impossible de créer un fichier déjà existant: 'C:\\Users\\Emmanuel\\antigravity 2\\generateur\\dist\\artistes'

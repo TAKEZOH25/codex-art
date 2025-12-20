@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dimgrey-mosquito-826040.hostingersite.com/sitemap_index.xml

@@ -1,7 +1,8 @@
 <article class="card-entity">
-    <a href="{{ entity.url }}">
+    <a href="{{ entity.url|default(entity._urls[lang]) }}">
         <figure>
-            <img src="{{ entity.image_url }}" alt="{{ entity.media.alt[lang]|default(entity.text[lang].name) }}"
+            <img src="{{ entity.image_url }}"
+                alt="{{ entity.media.alt[lang] if entity.media and entity.media.alt else entity.text[lang].name }}"
                 loading="lazy" width="300" height="200">
         </figure>
         <div class="card-content">

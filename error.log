@@ -1,0 +1,57 @@
+﻿Starting build...
+Warning: Output dir C:\Users\Emmanuel\antigravity 2\generateur\dist exists, overwriting files...
+DEBUG: Loader using C:\Users\Emmanuel\antigravity 2\generateur\templates
+python : Traceback (most recent 
+call last):
+Au caractère Ligne:1 : 1
++ python generate.py 2>&1 | 
+Out-File -FilePath error.log 
+-Encoding utf8
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : No 
+   tSpecified: (Traceback (most  
+   recent call last)::String)    
+ [], RemoteException
+    + FullyQualifiedErrorId : Na 
+   tiveCommandError
+ 
+  File 
+"C:\Users\Emmanuel\antigravity 
+2\generateur\generate.py", line 
+244, in <module>
+    main()
+    ~~~~^^
+  File 
+"C:\Users\Emmanuel\antigravity 
+2\generateur\generate.py", line 
+161, in main
+    render("pages/index.html", 
+"", {
+    
+~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'title': 
+t.get('hero_title'),
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'description': 
+t.get('hero_subtitle'),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
+        'featured_entities': 
+featured
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    })
+    ^^
+  File 
+"C:\Users\Emmanuel\antigravity 
+2\generateur\generate.py", line 
+155, in render
+    with open(out_path, "w", 
+encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^
+PermissionError: [Errno 13] 
+Permission denied: 'C:\\Users\\Em
+manuel\\antigravity 
+2\\generateur\\dist'
