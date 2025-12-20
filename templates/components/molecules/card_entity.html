@@ -1,0 +1,15 @@
+<article class="card-entity">
+    <a href="{{ entity.url }}">
+        <figure>
+            <img src="{{ entity.image_url }}" alt="{{ entity.media.alt[lang]|default(entity.text[lang].name) }}"
+                loading="lazy" width="300" height="200">
+        </figure>
+        <div class="card-content">
+            <h3>{{ entity.text[lang].name }}</h3>
+            <p>{{ entity.text[lang].short_description }}</p>
+            <div class="tags">
+                <span class="badge">{{ entity.type }}</span>
+            </div>
+        </div>
+    </a>
+</article>

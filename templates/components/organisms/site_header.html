@@ -1,0 +1,19 @@
+{# Header #}
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="{{ nav.home_url }}" class="logo">{{ site_name }}</a>
+        <nav>
+            <ul>
+                <li><a href="{{ nav.codex_url }}">Codex</a></li>
+                {% for item in nav.main %}
+                <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="lang-switch">
+            {% for l in other_langs %}
+            <a href="{{ l.url }}">{{ l.code|upper }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</header>

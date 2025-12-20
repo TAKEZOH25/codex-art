@@ -1,0 +1,141 @@
+[
+  {
+    "id": "wd:Q5582",
+    "slug": "vincent-van-gogh",
+    "type": "artist",
+    "group": "post-impressionnisme",
+    "text": {
+      "fr": {
+        "name": "Vincent van Gogh",
+        "short_description": "Peintre post-impressionniste néerlandais, figure majeure de l'art occidental.",
+        "description_long": "<p>Vincent Willem van Gogh est un peintre et dessinateur néerlandais. Son œuvre pleine de naturalisme, inspirée par l'impressionnisme et le pointillisme, annonce le fauvisme et l'expressionnisme.</p>",
+        "tags": ["peintre", "pays-bas", "tournesols"]
+      },
+      "en": {
+        "name": "Vincent van Gogh",
+        "short_description": "Dutch post-impressionist painter who is among the most famous and influential figures in the history of Western art.",
+        "description_long": "<p>Vincent Willem van Gogh was a Dutch Post-Impressionist painter who posthumously became one of the most famous and influential figures in Western art history.</p>",
+        "tags": ["painter", "netherlands", "sunflowers"]
+      }
+    },
+    "media": {
+      "has_image": true,
+      "alt": {
+        "fr": "Autoportrait de Vincent van Gogh",
+        "en": "Self-portrait of Vincent van Gogh"
+      }
+    },
+    "seo": {
+      "priority": 1.0
+    }
+  },
+  {
+    "id": "wd:Q12418",
+    "slug": "la-nuit-etoilee",
+    "type": "artwork",
+    "group": "post-impressionnisme",
+    "relations": {
+      "related": ["vincent-van-gogh"]
+    },
+    "text": {
+      "fr": {
+        "name": "La Nuit étoilée",
+        "short_description": "Huile sur toile peinte par Vincent van Gogh en 1889, représentant le ciel nocturne.",
+        "description_long": "<p>La Nuit étoilée est une peinture de l'artiste peintre post-impressionniste néerlandais Vincent van Gogh.</p>",
+        "tags": ["nuit", "étoiles", "ciel"]
+      },
+      "en": {
+        "name": "The Starry Night",
+        "short_description": "Oil on canvas painting by Vincent van Gogh, painted in June 1889.",
+        "description_long": "<p>The Starry Night is an oil on canvas painting by Dutch Post-Impressionist painter Vincent van Gogh.</p>",
+        "tags": ["night", "stars", "sky"]
+      }
+    },
+    "media": {
+        "has_image": false
+    }
+  },
+  {
+    "id": "wd:Q40415",
+    "slug": "impressionnisme",
+    "type": "movement",
+    "group": "art-moderne",
+    "text": {
+      "fr": {
+        "name": "Impressionnisme",
+        "short_description": "Mouvement pictural né en France dans la seconde moitié du XIXe siècle.",
+        "description_long": "<p>L'impressionnisme est un mouvement pictural français né de l'association d'artistes de la seconde moitié du XIXe siècle vivant à Paris.</p>",
+        "tags": ["lumière", "couleur", "plein-air"]
+      },
+      "en": {
+        "name": "Impressionism",
+        "short_description": "19th-century art movement characterized by relatively small, thin, yet visible brush strokes.",
+        "description_long": "<p>Impressionism is a 19th-century art movement characterized by relatively small, thin, yet visible brush strokes, open composition, emphasis on accurate depiction of light in its changing qualities.</p>",
+        "tags": ["light", "color", "outdoor"]
+      }
+    },
+    "seo": {
+        "priority": 0.9
+    }
+  },
+  {
+    "id": "wd:Q175476",
+    "slug": "claude-monet",
+    "type": "artist",
+    "group": "impressionnisme",
+    "text": {
+      "fr": {
+        "name": "Claude Monet",
+        "short_description": "Peintre français et l'un des fondateurs de l'impressionnisme.",
+        "description_long": "<p>Oscar-Claude Monet est un peintre français, l’un des fondateurs de l'impressionnisme.</p>",
+        "tags": ["nymphéas", "giverny"]
+      },
+      "en": {
+        "name": "Claude Monet",
+        "short_description": "French painter and founder of impressionist painting.",
+        "description_long": "<p>Oscar-Claude Monet was a French painter, a founder of French Impressionist painting.</p>",
+        "tags": ["water lilies", "giverny"]
+      }
+    }
+  },
+    {
+    "id": "wd:Q5599",
+    "slug": "pierre-auguste-renoir",
+    "type": "artist",
+    "group": "impressionnisme",
+    "text": {
+      "fr": {
+        "name": "Pierre-Auguste Renoir",
+        "short_description": "Peintre français, figure majeure de l'impressionnisme.",
+        "description_long": "<p>Pierre-Auguste Renoir est l'un des plus célèbres peintres français.</p>",
+        "tags": ["portraits", "danse"]
+      },
+      "en": {
+        "name": "Pierre-Auguste Renoir",
+        "short_description": "French artist who was a leading painter in the development of the Impressionist style.",
+        "description_long": "<p>Pierre-Auguste Renoir was a French artist who was a leading painter in the development of the Impressionist style.</p>",
+        "tags": ["portraits", "dance"]
+      }
+    }
+  },
+   {
+    "id": "wd:Q134749",
+    "slug": "huile-sur-toile",
+    "type": "technique",
+    "group": "peinture",
+    "text": {
+      "fr": {
+        "name": "Huile sur toile",
+        "short_description": "Technique de peinture utilisant des pigments mélangés à de l'huile siccative.",
+        "description_long": "<p>La peinture à l'huile est une technique picturale utilisant un mélange de pigments et d'huile siccative.</p>",
+        "tags": ["peinture", "technique"]
+      },
+      "en": {
+        "name": "Oil on canvas",
+        "short_description": "Painting technique using pigments with a medium of drying oil.",
+        "description_long": "<p>Oil painting is the process of painting with pigments with a medium of drying oil as the binder.</p>",
+        "tags": ["painting", "technique"]
+      }
+    }
+  }
+]

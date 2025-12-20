@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<section class="hero">
+    <h1>{{ t.hero_title }}</h1>
+    <p>{{ t.hero_subtitle }}</p>
+    {% include "components/atoms/button_cta.html" %}
+    {# Note: relying on simplified inclusion for MVP, assuming button_cta exists or using direct html #}
+    <a href="{{ nav.codex_url }}" class="btn primary">{{ t.explore_codex }}</a>
+</section>
+
+<section class="featured-grid">
+    <h2>{{ t.featured_title }}</h2>
+    <div class="grid">
+        {% for entity in featured_entities %}
+        {% include "components/molecules/card_entity.html" %}
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

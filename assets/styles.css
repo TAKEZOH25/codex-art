@@ -1,0 +1,91 @@
+:root {
+    --primary: #2c3e50;
+    --accent: #e74c3c;
+    --bg: #f8f9fa;
+    --text: #333;
+    --card-bg: #fff;
+    --space-md: 1.5rem;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Header */
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.site-header a { text-decoration: none; color: var(--primary); font-weight: 500; }
+
+/* Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card-entity {
+    background: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+.card-entity:hover { transform: translateY(-3px); }
+.card-entity figure { margin: 0; height: 200px; overflow: hidden; background: #eee;}
+.card-entity img { width: 100%; height: 100%; object-fit: cover; }
+.card-content { padding: 1.5rem; }
+.card-content h3 { margin: 0 0 0.5rem 0; font-size: 1.25rem; }
+
+/* Entity Detail */
+.entity-detail {
+    background: #fff;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 12px;
+}
+.entity-header { margin-bottom: 2rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;}
+.entity-header h1 { margin: 0 0 1rem 0; font-size: 2.5rem; }
+
+/* Utilities */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #eee;
+    font-size: 0.85rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
