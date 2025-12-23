@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>Romanticism</h1>
+        <h1 itemprop="name">Romanticism</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/romantisme.webp"
-                alt="Romanticism">
+                alt="Romanticism"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 artistic, literary, musical, and intellectual movement
             </div>
             <div class="long-description">
@@ -67,7 +84,71 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            
+            <a href="/artistes/francisco-de-goya/" class="mini-card">Francisco De Goya</a>
+            
+            <a href="/artistes/william-blake/" class="mini-card">William Blake</a>
+            
+            <a href="/artistes/taras-chevtchenko/" class="mini-card">Taras Chevtchenko</a>
+            
+            <a href="/artistes/jean-auguste-dominique-ingres/" class="mini-card">Jean Auguste Dominique Ingres</a>
+            
+            <a href="/artistes/mikhail-lermontov/" class="mini-card">Mikhail Lermontov</a>
+            
+            <a href="/artistes/eugene-delacroix/" class="mini-card">Eugene Delacroix</a>
+            
+            <a href="/artistes/ernst-theodor-amadeus-hoffmann/" class="mini-card">Ernst Theodor Amadeus Hoffmann</a>
+            
+            <a href="/artistes/theophile-gautier/" class="mini-card">Theophile Gautier</a>
+            
+            <a href="/artistes/joseph-mallord-william-turner/" class="mini-card">Joseph Mallord William Turner</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q37068" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "Romanticism",
+  "description": "artistic, literary, musical, and intellectual movement",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/movements/romantisme/"
+  
+  
+  
+}
+</script>
 
     </main>
 

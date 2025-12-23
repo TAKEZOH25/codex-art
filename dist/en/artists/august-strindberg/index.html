@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Q7724</h1>
+        <h1 itemprop="name">Q7724</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1849-01-22</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1912-05-14</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Stockholm</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/august-strindberg.webp"
-                alt="Q7724">
+                alt="Q7724"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Swedish writer and painter (1849–1912)
             </div>
             <div class="long-description">
@@ -67,7 +96,57 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/naturalisme/" class="tag-link">Naturalisme</a>
+            
+            <a href="/mouvements/symbolisme/" class="tag-link">Symbolisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q7724" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Q7724",
+  "description": "Swedish writer and painter (1849–1912)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/august-strindberg/"
+  , "birthDate": "1849-01-22"
+  , "deathDate": "1912-05-14"
+  , "birthPlace": "Stockholm"
+}
+</script>
 
     </main>
 

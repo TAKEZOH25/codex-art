@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Vincent van Gogh</h1>
+        <h1 itemprop="name">Vincent van Gogh</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1853-03-30</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1890-07-29</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Zundert</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/vincent-van-gogh.webp"
-                alt="Vincent van Gogh">
+                alt="Vincent van Gogh"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre néerlandais
             </div>
             <div class="long-description">
@@ -67,7 +96,76 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/expressionnisme/" class="tag-link">Expressionnisme</a>
+            
+            <a href="/mouvements/postimpressionnisme/" class="tag-link">Postimpressionnisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-nuit-etoilee/" class="mini-card">La Nuit Etoilee</a>
+            
+            <a href="/oeuvres/les-mangeurs-de-pommes-de-terre/" class="mini-card">Les Mangeurs De Pommes De Terre</a>
+            
+            <a href="/oeuvres/champ-de-ble-aux-corbeaux/" class="mini-card">Champ De Ble Aux Corbeaux</a>
+            
+            <a href="/oeuvres/iris/" class="mini-card">Iris</a>
+            
+            <a href="/oeuvres/terrasse-du-cafe-le-soir/" class="mini-card">Terrasse Du Cafe Le Soir</a>
+            
+            <a href="/oeuvres/le-cafe-de-nuit/" class="mini-card">Le Cafe De Nuit</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q5582" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vincent van Gogh",
+  "description": "peintre néerlandais",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/vincent-van-gogh/"
+  , "birthDate": "1853-03-30"
+  , "deathDate": "1890-07-29"
+  , "birthPlace": "Zundert"
+}
+</script>
 
     </main>
 

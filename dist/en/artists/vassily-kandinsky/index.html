@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Wassily Kandinsky</h1>
+        <h1 itemprop="name">Wassily Kandinsky</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1866-12-04</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1944-12-13</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Moscow</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/vassily-kandinsky.webp"
-                alt="Wassily Kandinsky">
+                alt="Wassily Kandinsky"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 avant-garde painter of Russian origin (1866–1944)
             </div>
             <div class="long-description">
@@ -67,7 +96,59 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/expressionnisme/" class="tag-link">Expressionnisme</a>
+            
+            <a href="/mouvements/bauhaus/" class="tag-link">Bauhaus</a>
+            
+            <a href="/mouvements/symbolisme/" class="tag-link">Symbolisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q61064" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Wassily Kandinsky",
+  "description": "avant-garde painter of Russian origin (1866–1944)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/vassily-kandinsky/"
+  , "birthDate": "1866-12-04"
+  , "deathDate": "1944-12-13"
+  , "birthPlace": "Moscow"
+}
+</script>
 
     </main>
 

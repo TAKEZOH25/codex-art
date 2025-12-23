@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Hermann Hesse</h1>
+        <h1 itemprop="name">Hermann Hesse</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1877-07-02</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1962-08-09</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Calw</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/hermann-hesse.webp"
-                alt="Hermann Hesse">
+                alt="Hermann Hesse"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 romancier, poète, peintre et essayiste allemand-suisse
             </div>
             <div class="long-description">
@@ -67,7 +96,55 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/existentialisme/" class="tag-link">Existentialisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q25973" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hermann Hesse",
+  "description": "romancier, poète, peintre et essayiste allemand-suisse",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/hermann-hesse/"
+  , "birthDate": "1877-07-02"
+  , "deathDate": "1962-08-09"
+  , "birthPlace": "Calw"
+}
+</script>
 
     </main>
 

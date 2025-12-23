@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Johannes Vermeer</h1>
+        <h1 itemprop="name">Johannes Vermeer</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1632-10-01</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1675-01-01</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Delft</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/johannes-vermeer.webp"
-                alt="Johannes Vermeer">
+                alt="Johannes Vermeer"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Dutch painter (1632–1675)
             </div>
             <div class="long-description">
@@ -67,7 +96,76 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/peinture-baroque/" class="tag-link">Peinture Baroque</a>
+            
+            <a href="/mouvements/age-dor-de-la-peinture-neerlandaise/" class="tag-link">Age Dor De La Peinture Neerlandaise</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-jeune-fille-a-la-perle/" class="mini-card">La Jeune Fille A La Perle</a>
+            
+            <a href="/oeuvres/la-laitiere/" class="mini-card">La Laitiere</a>
+            
+            <a href="/oeuvres/vue-de-delft/" class="mini-card">Vue De Delft</a>
+            
+            <a href="/oeuvres/lastronome/" class="mini-card">Lastronome</a>
+            
+            <a href="/oeuvres/lart-de-la-peinture/" class="mini-card">Lart De La Peinture</a>
+            
+            <a href="/oeuvres/la-ruelle/" class="mini-card">La Ruelle</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q41264" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Johannes Vermeer",
+  "description": "Dutch painter (1632–1675)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/johannes-vermeer/"
+  , "birthDate": "1632-10-01"
+  , "deathDate": "1675-01-01"
+  , "birthPlace": "Delft"
+}
+</script>
 
     </main>
 

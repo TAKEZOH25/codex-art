@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Jean-Auguste-Dominique Ingres</h1>
+        <h1 itemprop="name">Jean-Auguste-Dominique Ingres</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1780-08-29</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1867-01-14</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Montauban</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/jean-auguste-dominique-ingres.webp"
-                alt="Jean-Auguste-Dominique Ingres">
+                alt="Jean-Auguste-Dominique Ingres"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 French painter (1780–1867)
             </div>
             <div class="long-description">
@@ -67,7 +96,68 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/neo-classicisme/" class="tag-link">Neo Classicisme</a>
+            
+            <a href="/mouvements/romantisme/" class="tag-link">Romantisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-grande-odalisque/" class="mini-card">La Grande Odalisque</a>
+            
+            <a href="/oeuvres/le-bain-turc/" class="mini-card">Le Bain Turc</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q23380" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jean-Auguste-Dominique Ingres",
+  "description": "French painter (1780–1867)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/jean-auguste-dominique-ingres/"
+  , "birthDate": "1780-08-29"
+  , "deathDate": "1867-01-14"
+  , "birthPlace": "Montauban"
+}
+</script>
 
     </main>
 

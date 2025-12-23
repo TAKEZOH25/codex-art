@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Giotto</h1>
+        <h1 itemprop="name">Giotto</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1276-01-01</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1337-01-16</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Vicchio</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/giotto.webp"
-                alt="Giotto">
+                alt="Giotto"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Italian painter and architect (c. 1267–1337)
             </div>
             <div class="long-description">
@@ -67,7 +96,65 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/pre-renaissance/" class="tag-link">Pre Renaissance</a>
+            
+            <a href="/mouvements/pre-renaissance/" class="tag-link">Pre Renaissance</a>
+            
+            <a href="/mouvements/pre-renaissance/" class="tag-link">Pre Renaissance</a>
+            
+            <a href="/mouvements/art-gothique/" class="tag-link">Art Gothique</a>
+            
+            <a href="/mouvements/art-gothique/" class="tag-link">Art Gothique</a>
+            
+            <a href="/mouvements/art-gothique/" class="tag-link">Art Gothique</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q7814" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Giotto",
+  "description": "Italian painter and architect (c. 1267–1337)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/giotto/"
+  , "birthDate": "1276-01-01"
+  , "deathDate": "1337-01-16"
+  , "birthPlace": "Vicchio"
+}
+</script>
 
     </main>
 

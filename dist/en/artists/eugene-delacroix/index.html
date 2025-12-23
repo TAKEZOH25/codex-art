@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Eugène Delacroix</h1>
+        <h1 itemprop="name">Eugène Delacroix</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1798-04-26</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1863-08-13</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Saint-Maurice</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/eugene-delacroix.webp"
-                alt="Eugène Delacroix">
+                alt="Eugène Delacroix"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 French painter (1798–1863)
             </div>
             <div class="long-description">
@@ -67,7 +96,70 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/romantisme/" class="tag-link">Romantisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-liberte-guidant-le-peuple/" class="mini-card">La Liberte Guidant Le Peuple</a>
+            
+            <a href="/oeuvres/la-mort-de-sardanapale/" class="mini-card">La Mort De Sardanapale</a>
+            
+            <a href="/oeuvres/scenes-des-massacres-de-scio/" class="mini-card">Scenes Des Massacres De Scio</a>
+            
+            <a href="/oeuvres/la-barque-de-dante/" class="mini-card">La Barque De Dante</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q33477" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eugène Delacroix",
+  "description": "French painter (1798–1863)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/eugene-delacroix/"
+  , "birthDate": "1798-04-26"
+  , "deathDate": "1863-08-13"
+  , "birthPlace": "Saint-Maurice"
+}
+</script>
 
     </main>
 

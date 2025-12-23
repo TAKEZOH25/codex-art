@@ -41,23 +41,49 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>La Mer de glace</h1>
+        <h1 itemprop="name">La Mer de glace</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1823-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+            <span class="location">🏛️ Kunsthalle de Hambourg</span>
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/la-mer-de-glace.webp"
-                alt="La Mer de glace">
+                alt="La Mer de glace"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peinture de Caspar David Friedrich
             </div>
             <div class="long-description">
@@ -67,7 +93,53 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/caspar-david-friedrich/" class="artist-link">
+            Caspar David Friedrich
+        </a>
+    </section>
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q194137" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "La Mer de glace",
+  "description": "peinture de Caspar David Friedrich",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/oeuvres/la-mer-de-glace/"
+  
+  
+  
+}
+</script>
 
     </main>
 

@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>art de rue</h1>
+        <h1 itemprop="name">art de rue</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/art-de-rue.webp"
-                alt="art de rue">
+                alt="art de rue"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 mouvement artistique contemporain
             </div>
             <div class="long-description">
@@ -67,7 +84,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q17516" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "art de rue",
+  "description": "mouvement artistique contemporain",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/mouvements/art-de-rue/"
+  
+  
+  
+}
+</script>
 
     </main>
 

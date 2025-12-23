@@ -41,23 +41,50 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Bhimrao Ramji Ambedkar</h1>
+        <h1 itemprop="name">Bhimrao Ramji Ambedkar</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1891-04-14</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1956-12-06</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/bhimrao-ramji-ambedkar.webp"
-                alt="Bhimrao Ramji Ambedkar">
+                alt="Bhimrao Ramji Ambedkar"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 juriste et homme politique indien (1891-1956)
             </div>
             <div class="long-description">
@@ -67,7 +94,59 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/mouvement-pour-lindependance-de-linde/" class="tag-link">Mouvement Pour Lindependance De Linde</a>
+            
+            <a href="/mouvements/mouvement-social/" class="tag-link">Mouvement Social</a>
+            
+            <a href="/mouvements/mouvement-bouddhiste-dalit/" class="tag-link">Mouvement Bouddhiste Dalit</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q231690" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bhimrao Ramji Ambedkar",
+  "description": "juriste et homme politique indien (1891-1956)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/bhimrao-ramji-ambedkar/"
+  , "birthDate": "1891-04-14"
+  , "deathDate": "1956-12-06"
+  
+}
+</script>
 
     </main>
 

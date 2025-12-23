@@ -41,23 +41,49 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Bob Dylan</h1>
+        <h1 itemprop="name">Bob Dylan</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1941-05-24</span>
+            
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Duluth</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/bob-dylan.webp"
-                alt="Bob Dylan">
+                alt="Bob Dylan"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 American singer-songwriter (born 1941)
             </div>
             <div class="long-description">
@@ -67,7 +93,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q392" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Bob Dylan",
+  "description": "American singer-songwriter (born 1941)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/bob-dylan/"
+  , "birthDate": "1941-05-24"
+  
+  , "birthPlace": "Duluth"
+}
+</script>
 
     </main>
 

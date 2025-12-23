@@ -41,23 +41,50 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Akira Kurosawa</h1>
+        <h1 itemprop="name">Akira Kurosawa</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1910-03-23</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1998-09-06</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/akira-kurosawa.webp"
-                alt="Akira Kurosawa">
+                alt="Akira Kurosawa"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Japanese filmmaker (1910–1998)
             </div>
             <div class="long-description">
@@ -67,7 +94,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q8006" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Akira Kurosawa",
+  "description": "Japanese filmmaker (1910–1998)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/akira-kurosawa/"
+  , "birthDate": "1910-03-23"
+  , "deathDate": "1998-09-06"
+  
+}
+</script>
 
     </main>
 

@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Léonard de Vinci</h1>
+        <h1 itemprop="name">Léonard de Vinci</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1452-04-24</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1519-05-12</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Anchiano</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/leonard-de-vinci.webp"
-                alt="Léonard de Vinci">
+                alt="Léonard de Vinci"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre, sculpteur, architecte et ingénieur, théoricien de l'art et chercheur scientifique toscan (1452-1519)
             </div>
             <div class="long-description">
@@ -67,7 +96,76 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/renaissance/" class="tag-link">Renaissance</a>
+            
+            <a href="/mouvements/haute-renaissance/" class="tag-link">Haute Renaissance</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-joconde/" class="mini-card">La Joconde</a>
+            
+            <a href="/oeuvres/la-dame-a-lhermine/" class="mini-card">La Dame A Lhermine</a>
+            
+            <a href="/oeuvres/salvator-mundi/" class="mini-card">Salvator Mundi</a>
+            
+            <a href="/oeuvres/portrait-de-ginevra-de-benci/" class="mini-card">Portrait De Ginevra De Benci</a>
+            
+            <a href="/oeuvres/la-vierge-lenfant-jesus-et-sainte-anne/" class="mini-card">La Vierge Lenfant Jesus Et Sainte Anne</a>
+            
+            <a href="/oeuvres/madonna-benois/" class="mini-card">Madonna Benois</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q762" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Léonard de Vinci",
+  "description": "peintre, sculpteur, architecte et ingénieur, théoricien de l'art et chercheur scientifique toscan (1452-1519)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/leonard-de-vinci/"
+  , "birthDate": "1452-04-24"
+  , "deathDate": "1519-05-12"
+  , "birthPlace": "Anchiano"
+}
+</script>
 
     </main>
 

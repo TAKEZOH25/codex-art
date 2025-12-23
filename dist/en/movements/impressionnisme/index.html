@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>Impressionism</h1>
+        <h1 itemprop="name">Impressionism</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/impressionnisme.webp"
-                alt="Impressionism">
+                alt="Impressionism"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 19th-century art movement
             </div>
             <div class="long-description">
@@ -67,7 +84,69 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            
+            <a href="/artistes/henri-matisse/" class="mini-card">Henri Matisse</a>
+            
+            <a href="/artistes/claude-monet/" class="mini-card">Claude Monet</a>
+            
+            <a href="/artistes/paul-gauguin/" class="mini-card">Paul Gauguin</a>
+            
+            <a href="/artistes/auguste-renoir/" class="mini-card">Auguste Renoir</a>
+            
+            <a href="/artistes/edgar-degas/" class="mini-card">Edgar Degas</a>
+            
+            <a href="/artistes/edouard-manet/" class="mini-card">Edouard Manet</a>
+            
+            <a href="/artistes/mary-cassatt/" class="mini-card">Mary Cassatt</a>
+            
+            <a href="/artistes/camille-pissarro/" class="mini-card">Camille Pissarro</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q40415" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "Impressionism",
+  "description": "19th-century art movement",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/movements/impressionnisme/"
+  
+  
+  
+}
+</script>
 
     </main>
 

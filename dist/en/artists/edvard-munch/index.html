@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Edvard Munch</h1>
+        <h1 itemprop="name">Edvard Munch</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1863-12-12</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1944-01-23</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Ådalsbruk</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/edvard-munch.webp"
-                alt="Edvard Munch">
+                alt="Edvard Munch"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Norwegian painter. (1863–1944)
             </div>
             <div class="long-description">
@@ -67,7 +96,57 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/symbolisme/" class="tag-link">Symbolisme</a>
+            
+            <a href="/mouvements/expressionnisme/" class="tag-link">Expressionnisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q41406" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Edvard Munch",
+  "description": "Norwegian painter. (1863–1944)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/edvard-munch/"
+  , "birthDate": "1863-12-12"
+  , "deathDate": "1944-01-23"
+  , "birthPlace": "Ådalsbruk"
+}
+</script>
 
     </main>
 

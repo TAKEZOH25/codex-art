@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Sandro Botticelli</h1>
+        <h1 itemprop="name">Sandro Botticelli</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1445-01-01</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1510-05-27</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Florence</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/sandro-botticelli.webp"
-                alt="Sandro Botticelli">
+                alt="Sandro Botticelli"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre italien (1445–1510)
             </div>
             <div class="long-description">
@@ -67,7 +96,70 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/premiere-renaissance/" class="tag-link">Premiere Renaissance</a>
+            
+            <a href="/mouvements/ecole-florentine/" class="tag-link">Ecole Florentine</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/la-naissance-de-venus/" class="mini-card">La Naissance De Venus</a>
+            
+            <a href="/oeuvres/le-printemps/" class="mini-card">Le Printemps</a>
+            
+            <a href="/oeuvres/venus-et-mars/" class="mini-card">Venus Et Mars</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q5669" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Sandro Botticelli",
+  "description": "peintre italien (1445–1510)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/sandro-botticelli/"
+  , "birthDate": "1445-01-01"
+  , "deathDate": "1510-05-27"
+  , "birthPlace": "Florence"
+}
+</script>
 
     </main>
 

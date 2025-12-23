@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Guillaume II</h1>
+        <h1 itemprop="name">Guillaume II</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1859-01-27</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1941-06-04</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 palais du Kronprinz</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/guillaume-ii.webp"
-                alt="Guillaume II">
+                alt="Guillaume II"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 empereur allemand et roi de Prusse
             </div>
             <div class="long-description">
@@ -67,7 +96,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q2677" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Guillaume II",
+  "description": "empereur allemand et roi de Prusse",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/guillaume-ii/"
+  , "birthDate": "1859-01-27"
+  , "deathDate": "1941-06-04"
+  , "birthPlace": "palais du Kronprinz"
+}
+</script>
 
     </main>
 

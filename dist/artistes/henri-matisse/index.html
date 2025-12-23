@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Henri Matisse</h1>
+        <h1 itemprop="name">Henri Matisse</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1869-12-31</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1954-11-03</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Le Cateau-Cambrésis</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/henri-matisse.webp"
-                alt="Henri Matisse">
+                alt="Henri Matisse"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre, dessinateur, sculpteur et graveur français
             </div>
             <div class="long-description">
@@ -67,7 +96,63 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/impressionnisme/" class="tag-link">Impressionnisme</a>
+            
+            <a href="/mouvements/neo-impressionnisme/" class="tag-link">Neo Impressionnisme</a>
+            
+            <a href="/mouvements/postimpressionnisme/" class="tag-link">Postimpressionnisme</a>
+            
+            <a href="/mouvements/fauvisme/" class="tag-link">Fauvisme</a>
+            
+            <a href="/mouvements/divisionnisme/" class="tag-link">Divisionnisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q5589" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Henri Matisse",
+  "description": "peintre, dessinateur, sculpteur et graveur français",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/henri-matisse/"
+  , "birthDate": "1869-12-31"
+  , "deathDate": "1954-11-03"
+  , "birthPlace": "Le Cateau-Cambrésis"
+}
+</script>
 
     </main>
 

@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Taras Chevtchenko</h1>
+        <h1 itemprop="name">Taras Chevtchenko</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1814-03-09</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1861-03-10</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Moryntsi</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/taras-chevtchenko.webp"
-                alt="Taras Chevtchenko">
+                alt="Taras Chevtchenko"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre, poète et ethnographe ukrainien (1814-1861)
             </div>
             <div class="long-description">
@@ -67,7 +96,55 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/romantisme/" class="tag-link">Romantisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q134958" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Taras Chevtchenko",
+  "description": "peintre, poète et ethnographe ukrainien (1814-1861)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/taras-chevtchenko/"
+  , "birthDate": "1814-03-09"
+  , "deathDate": "1861-03-10"
+  , "birthPlace": "Moryntsi"
+}
+</script>
 
     </main>
 

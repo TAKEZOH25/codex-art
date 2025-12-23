@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Le Greco</h1>
+        <h1 itemprop="name">Le Greco</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1541-10-01</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1614-04-07</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Héraklion</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/le-greco.webp"
-                alt="Le Greco">
+                alt="Le Greco"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peintre, sculpteur et architecte du XVIe siècle
             </div>
             <div class="long-description">
@@ -67,7 +96,68 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/renaissance-espagnole/" class="tag-link">Renaissance Espagnole</a>
+            
+            <a href="/mouvements/manierisme/" class="tag-link">Manierisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/lenterrement-du-comte-dorgaz/" class="mini-card">Lenterrement Du Comte Dorgaz</a>
+            
+            <a href="/oeuvres/vue-de-tolede/" class="mini-card">Vue De Tolede</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q301" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Le Greco",
+  "description": "peintre, sculpteur et architecte du XVIe siècle",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/le-greco/"
+  , "birthDate": "1541-10-01"
+  , "deathDate": "1614-04-07"
+  , "birthPlace": "Héraklion"
+}
+</script>
 
     </main>
 

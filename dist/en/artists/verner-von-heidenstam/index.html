@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Verner von Heidenstam</h1>
+        <h1 itemprop="name">Verner von Heidenstam</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1859-07-06</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1940-05-20</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Olshammar</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/verner-von-heidenstam.webp"
-                alt="Verner von Heidenstam">
+                alt="Verner von Heidenstam"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Swedish writer (1859–1940)
             </div>
             <div class="long-description">
@@ -67,7 +96,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q129173" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Verner von Heidenstam",
+  "description": "Swedish writer (1859–1940)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/verner-von-heidenstam/"
+  , "birthDate": "1859-07-06"
+  , "deathDate": "1940-05-20"
+  , "birthPlace": "Olshammar"
+}
+</script>
 
     </main>
 

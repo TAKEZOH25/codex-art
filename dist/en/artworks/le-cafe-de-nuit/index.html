@@ -41,23 +41,49 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>The Night Café</h1>
+        <h1 itemprop="name">The Night Café</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1888-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+            <span class="location">🏛️ Yale University Art Gallery</span>
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/le-cafe-de-nuit.webp"
-                alt="The Night Café">
+                alt="The Night Café"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 painting by Vincent van Gogh (Yale University Art Gallery)
             </div>
             <div class="long-description">
@@ -67,7 +93,53 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/vincent-van-gogh/" class="artist-link">
+            Vincent Van Gogh
+        </a>
+    </section>
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q674846" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "The Night Café",
+  "description": "painting by Vincent van Gogh (Yale University Art Gallery)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artworks/le-cafe-de-nuit/"
+  
+  
+  
+}
+</script>
 
     </main>
 

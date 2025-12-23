@@ -41,23 +41,47 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>Netherlandish Proverbs</h1>
+        <h1 itemprop="name">Netherlandish Proverbs</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1559-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/les-proverbes-flamands.webp"
-                alt="Netherlandish Proverbs">
+                alt="Netherlandish Proverbs"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 painting by Pieter Bruegel the Elder, Gemäldegalerie Berlin
             </div>
             <div class="long-description">
@@ -67,7 +91,53 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/pieter-brueghel-lancien/" class="artist-link">
+            Pieter Brueghel Lancien
+        </a>
+    </section>
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q533619" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "Netherlandish Proverbs",
+  "description": "painting by Pieter Bruegel the Elder, Gemäldegalerie Berlin",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artworks/les-proverbes-flamands/"
+  
+  
+  
+}
+</script>
 
     </main>
 

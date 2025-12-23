@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>fauvisme</h1>
+        <h1 itemprop="name">fauvisme</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
-            <img src="/assets/illustrations/fauvisme.webp"
-                alt="fauvisme">
+            <img src="/assets/illustrations/default.webp"
+                alt="fauvisme"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 mouvement pictural né en France au début du XXe siècle caractérisé par la nouveauté de ses formes simplifiées, cloisonnées par des contours très marqués
             </div>
             <div class="long-description">
@@ -67,7 +84,55 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            
+            <a href="/artistes/henri-matisse/" class="mini-card">Henri Matisse</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q166593" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "fauvisme",
+  "description": "mouvement pictural né en France au début du XXe siècle caractérisé par la nouveauté de ses formes simplifiées, cloisonnées par des contours très marqués",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/mouvements/fauvisme/"
+  
+  
+  
+}
+</script>
 
     </main>
 

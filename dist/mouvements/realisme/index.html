@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>réalisme</h1>
+        <h1 itemprop="name">réalisme</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
-            <img src="/assets/illustrations/realisme.webp"
-                alt="réalisme">
+            <img src="/assets/illustrations/default.webp"
+                alt="réalisme"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 courant artistique
             </div>
             <div class="long-description">
@@ -67,7 +84,55 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            
+            <a href="/artistes/ilia-repine/" class="mini-card">Ilia Repine</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q10857409" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "réalisme",
+  "description": "courant artistique",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/mouvements/realisme/"
+  
+  
+  
+}
+</script>
 
     </main>
 

@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Paul Gauguin</h1>
+        <h1 itemprop="name">Paul Gauguin</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1848-06-07</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1903-05-08</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Paris</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/paul-gauguin.webp"
-                alt="Paul Gauguin">
+                alt="Paul Gauguin"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 French painter and printmaker (1848–1903)
             </div>
             <div class="long-description">
@@ -67,7 +96,78 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/symbolisme/" class="tag-link">Symbolisme</a>
+            
+            <a href="/mouvements/postimpressionnisme/" class="tag-link">Postimpressionnisme</a>
+            
+            <a href="/mouvements/ecole-de-pont-aven/" class="tag-link">Ecole De Pont Aven</a>
+            
+            <a href="/mouvements/synthetisme/" class="tag-link">Synthetisme</a>
+            
+            <a href="/mouvements/primitivisme/" class="tag-link">Primitivisme</a>
+            
+            <a href="/mouvements/cloisonnisme/" class="tag-link">Cloisonnisme</a>
+            
+            <a href="/mouvements/impressionnisme/" class="tag-link">Impressionnisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/dou-venons-nous-que-sommes-nous-ou-allons-nous/" class="mini-card">Dou Venons Nous Que Sommes Nous Ou Allons Nous</a>
+            
+            <a href="/oeuvres/le-christ-jaune/" class="mini-card">Le Christ Jaune</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q37693" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Paul Gauguin",
+  "description": "French painter and printmaker (1848–1903)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/paul-gauguin/"
+  , "birthDate": "1848-06-07"
+  , "deathDate": "1903-05-08"
+  , "birthPlace": "Paris"
+}
+</script>
 
     </main>
 

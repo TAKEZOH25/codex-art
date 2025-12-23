@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Le Corbusier</h1>
+        <h1 itemprop="name">Le Corbusier</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1887-10-06</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1965-08-27</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 La Chaux-de-Fonds</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/le-corbusier.webp"
-                alt="Le Corbusier">
+                alt="Le Corbusier"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 architecte, urbaniste, décorateur, peintre, sculpteur et homme de lettres franco-suisse
             </div>
             <div class="long-description">
@@ -67,7 +96,59 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/mouvement-moderne/" class="tag-link">Mouvement Moderne</a>
+            
+            <a href="/mouvements/purisme/" class="tag-link">Purisme</a>
+            
+            <a href="/mouvements/brutalisme/" class="tag-link">Brutalisme</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q4724" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Le Corbusier",
+  "description": "architecte, urbaniste, décorateur, peintre, sculpteur et homme de lettres franco-suisse",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/artistes/le-corbusier/"
+  , "birthDate": "1887-10-06"
+  , "deathDate": "1965-08-27"
+  , "birthPlace": "La Chaux-de-Fonds"
+}
+</script>
 
     </main>
 

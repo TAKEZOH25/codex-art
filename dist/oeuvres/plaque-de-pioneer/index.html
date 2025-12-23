@@ -41,23 +41,49 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>plaque de Pioneer</h1>
+        <h1 itemprop="name">plaque de Pioneer</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1972-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+            <span class="location">🏛️ système solaire externe</span>
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/plaque-de-pioneer.webp"
-                alt="plaque de Pioneer">
+                alt="plaque de Pioneer"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 message apposé sur la sonde spatiale Pioneer adressé aux éventuels extra-terrestres
             </div>
             <div class="long-description">
@@ -67,7 +93,46 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q412" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "plaque de Pioneer",
+  "description": "message apposé sur la sonde spatiale Pioneer adressé aux éventuels extra-terrestres",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/oeuvres/plaque-de-pioneer/"
+  
+  
+  
+}
+</script>
 
     </main>
 

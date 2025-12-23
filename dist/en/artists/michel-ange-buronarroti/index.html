@@ -41,23 +41,52 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Person">
     <header class="entity-header">
-        <h1>Michelangelo</h1>
+        <h1 itemprop="name">Michelangelo</h1>
+
         <div class="meta">
             <span class="badge">artist</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            <span class="date" itemprop="birthDate">1475-03-15</span>
+            
+            
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">1564-02-28</span>
+            
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            <span class="location" itemprop="birthPlace">📍 Caprese Michelangelo</span>
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/michel-ange-buronarroti.webp"
-                alt="Michelangelo">
+                alt="Michelangelo"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Italian artist and architect (1475–1564)
             </div>
             <div class="long-description">
@@ -67,7 +96,66 @@
     </div>
 
     
+    
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            
+            <a href="/mouvements/haute-renaissance/" class="tag-link">Haute Renaissance</a>
+            
+            <a href="/mouvements/peinture-de-la-renaissance/" class="tag-link">Peinture De La Renaissance</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            
+            <a href="/oeuvres/tondo-doni/" class="mini-card">Tondo Doni</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q5592" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Michelangelo",
+  "description": "Italian artist and architect (1475–1564)",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/artists/michel-ange-buronarroti/"
+  , "birthDate": "1475-03-15"
+  , "deathDate": "1564-02-28"
+  , "birthPlace": "Caprese Michelangelo"
+}
+</script>
 
     </main>
 

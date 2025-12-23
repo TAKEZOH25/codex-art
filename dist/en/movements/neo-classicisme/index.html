@@ -41,23 +41,40 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/Thing">
     <header class="entity-header">
-        <h1>Neoclassicism</h1>
+        <h1 itemprop="name">Neoclassicism</h1>
+
         <div class="meta">
             <span class="badge">movement</span>
+            
             <span class="badge secondary">art-moderne</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+        </div>
+        
+
+        
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/neo-classicisme.webp"
-                alt="Neoclassicism">
+                alt="Neoclassicism"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 Western cultural movement inspired by ancient Greece and Rome
             </div>
             <div class="long-description">
@@ -67,7 +84,57 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            
+            <a href="/artistes/jean-auguste-dominique-ingres/" class="mini-card">Jean Auguste Dominique Ingres</a>
+            
+            <a href="/artistes/jacques-louis-david/" class="mini-card">Jacques Louis David</a>
+            
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q14378" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Thing",
+  "name": "Neoclassicism",
+  "description": "Western cultural movement inspired by ancient Greece and Rome",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/en/movements/neo-classicisme/"
+  
+  
+  
+}
+</script>
 
     </main>
 

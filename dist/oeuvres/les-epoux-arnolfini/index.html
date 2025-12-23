@@ -41,23 +41,47 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>Les Époux Arnolfini</h1>
+        <h1 itemprop="name">Les Époux Arnolfini</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1434-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/les-epoux-arnolfini.webp"
-                alt="Les Époux Arnolfini">
+                alt="Les Époux Arnolfini"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 peinture de Jan van Eyck
             </div>
             <div class="long-description">
@@ -67,7 +91,53 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/jan-van-eyck/" class="artist-link">
+            Jan Van Eyck
+        </a>
+    </section>
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q220859" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "Les Époux Arnolfini",
+  "description": "peinture de Jan van Eyck",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/oeuvres/les-epoux-arnolfini/"
+  
+  
+  
+}
+</script>
 
     </main>
 

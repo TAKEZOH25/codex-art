@@ -41,23 +41,49 @@
 
     <main class="container">
         
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/VisualArtwork">
     <header class="entity-header">
-        <h1>Vue de Tolède</h1>
+        <h1 itemprop="name">Vue de Tolède</h1>
+
         <div class="meta">
             <span class="badge">artwork</span>
+            
             <span class="badge secondary">peinture</span>
+            
         </div>
+
+        
+        
+        <div class="dates">
+            
+            
+            
+            <span class="date">1596-01-01</span>
+            
+        </div>
+        
+
+        
+        
+        <div class="locations">
+            
+            
+            <span class="location">🏛️ Metropolitan Museum of Art</span>
+            
+        </div>
+        
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="/assets/illustrations/vue-de-tolede.webp"
-                alt="Vue de Tolède">
+                alt="Vue de Tolède"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 tableau du Greco
             </div>
             <div class="long-description">
@@ -67,7 +93,53 @@
     </div>
 
     
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/le-greco/" class="artist-link">
+            Le Greco
+        </a>
+    </section>
+    
+
+    
+    
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            
+            <li><a href="https://www.wikidata.org/wiki/Q883994" target="_blank" rel="noopener">Wikidata</a></li>
+            
+        </ul>
+    </section>
+    
+
+    
+    
 </article>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "Vue de Tolède",
+  "description": "tableau du Greco",
+  "url": "https://dimgrey-mosquito-826040.hostingersite.com/oeuvres/vue-de-tolede/"
+  
+  
+  
+}
+</script>
 
     </main>
 

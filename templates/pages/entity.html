@@ -1,23 +1,56 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-<article class="entity-detail">
+<article class="entity-detail" itemscope
+    itemtype="https://schema.org/{% if entity.type == 'artist' %}Person{% elif entity.type == 'artwork' %}VisualArtwork{% else %}Thing{% endif %}">
     <header class="entity-header">
-        <h1>{{ entity.text[lang].name }}</h1>
+        <h1 itemprop="name">{{ entity.text[lang].name }}</h1>
+
         <div class="meta">
             <span class="badge">{{ entity.type }}</span>
+            {% if entity.group %}
             <span class="badge secondary">{{ entity.group }}</span>
+            {% endif %}
         </div>
+
+        {# Dates for artists #}
+        {% if entity.dates %}
+        <div class="dates">
+            {% if entity.dates.birth %}
+            <span class="date" itemprop="birthDate">{{ entity.dates.birth }}</span>
+            {% endif %}
+            {% if entity.dates.death %}
+            <span class="date-separator">—</span>
+            <span class="date" itemprop="deathDate">{{ entity.dates.death }}</span>
+            {% endif %}
+            {% if entity.dates.created %}
+            <span class="date">{{ entity.dates.created }}</span>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {# Locations #}
+        {% if entity.locations %}
+        <div class="locations">
+            {% if entity.locations.birthPlace and entity.locations.birthPlace[lang] %}
+            <span class="location" itemprop="birthPlace">📍 {{ entity.locations.birthPlace[lang] }}</span>
+            {% endif %}
+            {% if entity.locations.current and entity.locations.current[lang] %}
+            <span class="location">🏛️ {{ entity.locations.current[lang] }}</span>
+            {% endif %}
+        </div>
+        {% endif %}
     </header>
 
     <div class="entity-body">
         <figure class="main-image">
             <img src="{{ entity.image_url }}"
-                alt="{{ entity.media.alt[lang] if entity.media and entity.media.alt else entity.text[lang].name }}">
+                alt="{{ entity.media.alt[lang] if entity.media and entity.media.alt else entity.text[lang].name }}"
+                itemprop="image">
         </figure>
 
         <div class="content">
-            <div class="intro">
+            <div class="intro" itemprop="description">
                 {{ entity.text[lang].short_description }}
             </div>
             <div class="long-description">
@@ -26,15 +59,89 @@
         </div>
     </div>
 
+    {# Related Movements - for artists #}
+    {% if entity.relations and entity.relations.movements %}
+    <section class="related-section">
+        <h2>Mouvements artistiques</h2>
+        <div class="tags-list">
+            {% for mov_slug in entity.relations.movements[:8] %}
+            <a href="/mouvements/{{ mov_slug }}/" class="tag-link">{{ mov_slug|replace('-', ' ')|title }}</a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {# Related Works - for artists #}
+    {% if entity.relations and entity.relations.works %}
+    <section class="related-section">
+        <h2>Œuvres</h2>
+        <div class="mini-grid">
+            {% for work_slug in entity.relations.works[:6] %}
+            <a href="/oeuvres/{{ work_slug }}/" class="mini-card">{{ work_slug|replace('-', ' ')|title }}</a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {# Related Artists - for movements #}
+    {% if entity.relations and entity.relations.artists %}
+    <section class="related-section">
+        <h2>Artistes du mouvement</h2>
+        <div class="mini-grid">
+            {% for artist_slug in entity.relations.artists[:12] %}
+            <a href="/artistes/{{ artist_slug }}/" class="mini-card">{{ artist_slug|replace('-', ' ')|title }}</a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {# Artist link - for artworks #}
+    {% if entity.relations and entity.relations.artist %}
+    <section class="related-section">
+        <h2>Artiste</h2>
+        <a href="/artistes/{{ entity.relations.artist }}/" class="artist-link">
+            {{ entity.relations.artist|replace('-', ' ')|title }}
+        </a>
+    </section>
+    {% endif %}
+
+    {# Sources #}
+    {% if entity.sources %}
+    <section class="sources-section">
+        <h3>Sources</h3>
+        <ul class="sources-list">
+            {% for source in entity.sources %}
+            <li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {# Related entities grid #}
     {% if related_entities %}
     <section class="related">
-        <h2>Related</h2>
+        <h2>Voir aussi</h2>
         <div class="grid">
-            {% for entity in related_entities %}
+            {% for ent in related_entities %}
+            {% set entity = ent %}
             {% include "components/molecules/card_entity.html" %}
             {% endfor %}
         </div>
     </section>
     {% endif %}
 </article>
+
+{# JSON-LD Structured Data #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "{% if entity.type == 'artist' %}Person{% elif entity.type == 'artwork' %}VisualArtwork{% else %}Thing{% endif %}",
+  "name": "{{ entity.text[lang].name }}",
+  "description": "{{ entity.text[lang].short_description }}",
+  "url": "{{ canonical_url }}"
+  {% if entity.dates and entity.dates.birth %}, "birthDate": "{{ entity.dates.birth }}"{% endif %}
+  {% if entity.dates and entity.dates.death %}, "deathDate": "{{ entity.dates.death }}"{% endif %}
+  {% if entity.locations and entity.locations.birthPlace and entity.locations.birthPlace[lang] %}, "birthPlace": "{{ entity.locations.birthPlace[lang] }}"{% endif %}
+}
+</script>
 {% endblock %}
