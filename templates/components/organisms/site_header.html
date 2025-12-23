@@ -1,18 +1,18 @@
-{# Header #}
 <header class="site-header">
-    <div class="container header-inner">
-        <a href="{{ nav.home_url }}" class="logo">{{ site_name }}</a>
+    <div class="header-inner">
+        <a href="{{ nav.home_url }}" class="logo">Art Virtuoso</a>
         <nav>
             <ul>
-                <li><a href="{{ nav.codex_url }}">Codex</a></li>
-                {% for item in nav.main %}
-                <li><a href="{{ item.url }}">{{ item.label }}</a></li>
-                {% endfor %}
+                <li><a href="{{ nav.codex_url }}" {% if request_path=='/codex/' %}class="active" {% endif %}>Codex</a>
+                </li>
+                <li><a href="/artistes/">{{ 'Artistes' if lang == 'fr' else 'Artists' }}</a></li>
+                <li><a href="/mouvements/">{{ 'Mouvements' if lang == 'fr' else 'Movements' }}</a></li>
+                <li><a href="/oeuvres/">{{ 'Œuvres' if lang == 'fr' else 'Artworks' }}</a></li>
             </ul>
         </nav>
         <div class="lang-switch">
-            {% for l in other_langs %}
-            <a href="{{ l.url }}">{{ l.code|upper }}</a>
+            {% for other in other_langs %}
+            <a href="{{ other.url }}">{{ other.code|upper }}</a>
             {% endfor %}
         </div>
     </div>

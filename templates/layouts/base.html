@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ title }} | {{ site_name }}{% endblock %}</title>
-    <meta name="description" content="{% block description %}{{ description }}{% endblock %}">
+    <title>{{ title }} | {{ site_name }}</title>
+    <meta name="description" content="{{ description }}">
     <link rel="canonical" href="{{ canonical_url }}">
-    
+
     <!-- OpenGraph -->
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ canonical_url }}">
-    <meta property="og:type" content="{{ og_type|default('website') }}">
-    {% if og_image %}
-    <meta property="og:image" content="{{ og_image }}">
-    {% endif %}
-    
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ root_url }}/assets/styles.css">
-    
+    <link rel="stylesheet" href="/assets/styles.css">
+
     <!-- JSON-LD -->
-    {% if json_ld %}
-    <script type="application/ld+json">
-        {{ json_ld | tojson | safe }}
-    </script>
-    {% endif %}
+    {% block jsonld %}{% endblock %}
 </head>
+
 <body>
     {% include "components/organisms/site_header.html" %}
 
-    <main class="container">
-        {% block content %}{% endblock %}
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 
     {% include "components/organisms/site_footer.html" %}
 
-    <script src="{{ root_url }}/assets/search.js"></script>
+    <script src="/assets/search.js"></script>
 </body>
+
 </html>

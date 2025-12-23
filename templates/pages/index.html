@@ -1,19 +1,38 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
+{# HERO - Single CTA only #}
 <section class="hero">
     <h1>{{ t.hero_title }}</h1>
     <p>{{ t.hero_subtitle }}</p>
-    {% include "components/atoms/button_cta.html" %}
-    {# Note: relying on simplified inclusion for MVP, assuming button_cta exists or using direct html #}
     <a href="{{ nav.codex_url }}" class="btn primary">{{ t.explore_codex }}</a>
 </section>
 
+{# CATEGORY NAV #}
+<nav class="category-nav">
+    <a href="/artistes/">{{ 'Artistes' if lang == 'fr' else 'Artists' }}</a>
+    <a href="/mouvements/">{{ 'Mouvements' if lang == 'fr' else 'Movements' }}</a>
+    <a href="/oeuvres/">{{ 'Œuvres' if lang == 'fr' else 'Artworks' }}</a>
+</nav>
+
+{# FEATURED SECTION #}
 <section class="featured-grid">
     <h2>{{ t.featured_title }}</h2>
     <div class="grid">
-        {% for entity in featured_entities %}
-        {% include "components/molecules/card_entity.html" %}
+        {% for entity in featured_entities[:6] %}
+        <article class="card">
+            <a href="{{ entity._urls[lang] }}">
+                <figure>
+                    <img src="{{ entity.image_url }}" alt="{{ entity.text[lang].name }}" loading="lazy" width="400"
+                        height="300">
+                </figure>
+                <div class="body">
+                    <h3>{{ entity.text[lang].name }}</h3>
+                    <p>{{ entity.text[lang].short_description[:100] }}...</p>
+                    <span class="badge">{{ entity.type }}</span>
+                </div>
+            </a>
+        </article>
         {% endfor %}
     </div>
 </section>

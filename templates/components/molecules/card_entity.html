@@ -1,16 +1,13 @@
-<article class="card-entity">
-    <a href="{{ entity.url|default(entity._urls[lang]) }}">
+<article class="card">
+    <a href="{{ entity._urls[lang] if entity._urls else '#' }}">
         <figure>
-            <img src="{{ entity.image_url }}"
-                alt="{{ entity.media.alt[lang] if entity.media and entity.media.alt else entity.text[lang].name }}"
-                loading="lazy" width="300" height="200">
+            <img src="{{ entity.image_url }}" alt="{{ entity.text[lang].name }}" loading="lazy" width="400"
+                height="300">
         </figure>
-        <div class="card-content">
+        <div class="body">
             <h3>{{ entity.text[lang].name }}</h3>
-            <p>{{ entity.text[lang].short_description }}</p>
-            <div class="tags">
-                <span class="badge">{{ entity.type }}</span>
-            </div>
+            <p>{{ entity.text[lang].short_description[:80] }}...</p>
+            <span class="badge">{{ entity.type }}</span>
         </div>
     </a>
 </article>
